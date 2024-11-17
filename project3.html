@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Predicting Stock Prices Using AWS Infrastructure</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/creative.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand page-scroll" href="index.html">Home</a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a class="page-scroll" href="about.html">About</a></li>
+          <li><a class="page-scroll" href="index.html#projects">Projects</a></li>
+          <li><a class="page-scroll" href="Resume/Rijul Gupta_DA.pdf" target="_blank">Resume</a></li>
+          <li><a class="page-scroll" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Project Header Section -->
+  <section id="project-header" style="padding: 100px 0; color: #fff; background-color: #f05f40;">
+    <div class="container text-center">
+      <h1 class="section-heading">Predicting Views and Likes of Music Tracks</h1>
+    </div>
+  </section>
+
+  <!-- Project Details Section -->
+  <section id="project-details" style="background-color: #333; color: #fff; padding: 50px 0;">
+    <div class="container">
+      <!-- Row with project description and images -->
+      <div class="row">
+        <!-- Left side: Text details -->
+        <div class="col-md-8">
+          <h2 style="color: #f05f40;">Project Overview</h2>
+          <p>This project leverages a dataset of 26 variables encompassing music features and audience engagement metrics from platforms like Spotify and YouTube. The goal is to predict engagement metrics (views and likes) based on musical characteristics, aiding decision-making for musicians, producers, and marketers.</p>
+          <hr class="primary">
+
+          <h2 style="color: #f05f40;">Problem Statement</h2>
+          <p>Predicting the popularity of music tracks is challenging due to the varied nature of engagement metrics and the diverse features of songs. This project aims to identify key predictors of song popularity to support strategic decision-making in the music industry.</p>
+          <hr class="primary">
+          
+
+          <h2 style="color: #f05f40;">Solution/Approach</h2>
+          <ul>
+            <li><strong>Data Collection and Preprocessing:</strong> The dataset was analyzed to handle missing values and normalize key features. We also conducted feature engineering, creating variables like the duration in minutes.</li>
+            <li><strong>Exploratory Data Analysis (EDA)</strong> Examined relationships between features, such as loudness and valence, and the target metrics of views and likes to identify meaningful correlations.</li>
+            <li><strong>Modeling:</strong> Utilized multiple regression and machine learning models, including Random Forest and Gradient Boosting, to predict engagement metrics. Model performance was evaluated based on RMSE and R-squared.</li>
+          </ul>  
+            
+          <hr class="primary">
+
+          <h2 style="color: #f05f40;">Key Steps and Tasks Performed</h2>
+          <ul>
+            <li><strong>Exploratory Data Analysis (EDA):</strong> Regression Techniques and Model Evaluation</li>
+            <li><strong>Data Preprocessing:</strong> Handled missing values, performed outlier analysis, and feature scaling.</li>
+            <li><strong>Modeling and Evaluation:</strong> Applied various models, compared performance, and optimized hyperparameters.</li>
+          </ul>
+          <hr class="primary">
+
+          <h2 style="color: #f05f40;">Tools & Skills Utilized</h2>
+          <ul style="list-style: none; padding-left: 0;">
+            <li>Python (Pandas, NumPy, Scikit-Learn)</li>
+            <li>Visualization Libraries (Matplotlib, Seaborn), Tableau</li>
+            <li>Regression Techniques and Model Evaluation</li>
+          </ul>
+          <hr class="primary">
+          <h2 style="color: #f05f40;">Key Learnings</h2>
+          <p>Learned to interpret correlations between song features and audience engagement, with specific insights for duration and valence. Improved skills in model selection and evaluation for predictive analytics in the music industry.</p>
+        </div>
+
+        <!-- Right side: Images with captions -->
+        <div class="col-md-4 text-center">
+          <!-- First Image with caption -->
+          <img src="img/CorrelationLoudness.png" alt="Correlation between Energy and Loudness" class="img-responsive" style="margin-bottom: 10px;">
+          <p class="text-muted" style="font-size: 14px;">Correlation between Energy and Loudness</p>
+
+          <!-- Second Image with caption -->
+          <img src="img/Heatmap.png" alt="Treemap for Avg Likes" class="img-responsive" style="margin-top: 30px;">
+          <p class="text-muted" style="font-size: 14px;">Treemap for Avg Likes</p>
+           <!-- Second Image with caption -->
+           <img src="img/Stream.png" alt=" Stream and views count for artists" class="img-responsive" style="margin-top: 30px;">
+           <p class="text-muted" style="font-size: 14px;">Stream vs Views for Artists</p>
+        </div>
+      </div>
+
+      <!-- Portfolio Links Section -->
+      <div class="row" style="margin-top: 40px;">
+        <div class="col-md-6 text-center">
+          <a href="https://github.com/rijul1597/PortfolioProjects/tree/276bd3debe749aead480edf6e12ca343744f0eba/What%20Makes%20A%20Song%20Hit" class="btn btn-primary btn-xl page-scroll" target="_blank">View on GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section and Footer -->
+  <section id="contact" style="margin: 0; padding: 0;">
+    <footer style="background-color: #222; color: #fff; padding: 20px 0;">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-md-12">
+            <a href="https://github.com/rijul1597" target="_blank">
+              <img src="img/Github.png" alt="GitHub" style="width: 40px; height: 40px; margin: 0 15px;">
+            </a>
+            <a href="https://www.linkedin.com/in/rijul-gupta/" target="_blank">
+              <img src="img/linkedinicon.webp" alt="LinkedIn" style="width: 40px; height: 40px; margin: 0 15px;">
+            </a>
+            <a href="mailto:Rijulgupta1597@gmail.com" target="_blank">
+              <img src="img/gmail.png" alt="Gmail" style="width: 40px; height: 40px; margin: 0 15px;">
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <p style="margin-top: 10px; font-size: 14px; color: #888;">&copy; 2024 Rijul Gupta. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+
+  <!-- Scripts -->
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

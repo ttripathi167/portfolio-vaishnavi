@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Rijul Gupta</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/creative.css">
+  <style>
+    .timeline {
+      position: relative;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .timeline::after {
+      content: '';
+      position: absolute;
+      width: 6px;
+      background-color: #f05f40;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      margin-left: -3px;
+    }
+
+    .timeline-item {
+      padding: 10px 40px;
+      position: relative;
+      background-color: inherit;
+      width: 50%;
+    }
+
+    .timeline-item::after {
+      content: '';
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      right: -17px;
+      background-color: #f05f40;
+      border: 4px solid #fff;
+      top: 15px;
+      border-radius: 50%;
+      z-index: 1;
+    }
+
+    .timeline-item.left { left: 0; }
+    .timeline-item.right { left: 50%; }
+    .timeline-item.right::after { left: -16px; }
+    .timeline-content {
+      padding: 20px 30px;
+      background-color: #222;
+      position: relative;
+      border-radius: 6px;
+      color: #f8f8f8;
+    }
+
+    .footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    .footer a {
+      color: #fff;
+      margin: 0 10px;
+      font-size: 24px;
+      transition: color 0.3s;
+    }
+
+    .footer a:hover {
+      color: #f05f40;
+    }
+
+    @media screen and (max-width: 768px) {
+      .timeline-item::after {
+        left: 50%;
+      }
+
+      .timeline-item {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+      }
+
+      .timeline-item.right { left: 0%; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand page-scroll" href="index.html">Home</a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a class="page-scroll" href="about.html">About</a></li>
+          <li><a class="page-scroll" href="index.html#projects">Projects</a></li>
+          <li><a class="page-scroll" href="Resume/Rijul Gupta_DA.pdf" target="_blank">Resume</a></li>
+          <li><a class="page-scroll" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  
+<!-- About Section -->
+<section id="about" style="padding: 100px 0; color: #fff; background: url('img/header.jpg') no-repeat center center; background-size: cover;">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-lg-offset-4 text-center">
+        <img src="img/Rijul.jpg" class="img-responsive img-circle" alt="Rijul Gupta" style="max-width: 300px; margin: 0 auto; border: 3px solid #fff;">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 text-center">
+        <div style="background-color: rgba(0, 0, 0, 0.6); padding: 20px; border-radius: 8px; margin-top: 20px;">
+          <h2 class="section-heading" style="color: #fff; margin-top: 0;">About Me</h2>
+          <p class="text-faded" style="font-size: 18px; color: rgba(255, 255, 255, 0.8);">
+            
+            Rijul is passionate about using data to drive smarter, more efficient decision-making. He aims to simplify data analytics and machine learning, making these fields accessible and understandable. Enthusiastic about new technologies, Rijul constantly experiments with personal projects to expand his knowledge and skills. With a strong foundation in RPA tools like UiPath, he primarily uses Python and R, and has experience with various data and automation tools.<br><br>
+
+            Rijul has two years of experience at Guardian Life Insurance, a Fortune 250 company, where he built automation solutions with RPA. His experience includes data analytics and machine learning projects during his Master’s in Business Analytics at UIUC, along with work for clients like Exelon (ComEd). He also contributed to an AI-based researcher recommender tool as a data analyst at the Discovery Partners Institute. In his spare time, he enjoys analyzing stock data and making investments.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Timeline Section -->
+  <section style="background-color: #222; padding: 50px 0;">
+    <div class="container">
+      <h3 class="text-center" style="color: #f05f40; margin-bottom: 30px;">Education</h3>
+      <div class="timeline">
+        <div class="timeline-item left">
+          <div class="timeline-content">
+            <img src="img/uiuc.jpg" alt="University of Illinois" style="max-width: 300px; margin-bottom: 15px; border-radius: 8px;">
+            <h4>Master's of Science in Business Analytics</h4>
+            <p>University of Illinois at Urbana-Champaign (2023 - 2024)</p>
+            <p>Developed data-driven solutions on live client projects, specializing in analytics and machine learning. Worked extensively with Python, R, and SQL on predictive modeling projects, enhancing business decision-making.</p>
+          </div>
+        </div>
+        <div class="timeline-item right">
+          <div class="timeline-content">
+            <img src="img/MRIU.jpeg" alt="Manav Rachna International University" style="max-width: 290px; margin-bottom: 15px; border-radius: 8px;">
+            <h4>Bachelors of Technology in Computer Science</h4>
+            <p>Manav Rachna International University (2016 - 2020)</p>
+            <p>Engaged in projects as a volunteer research associate, focusing on IoT, website development, and sentiment analysis. Built a strong foundation in software development, algorithms, and data science fundamentals.</p>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="text-center" style="color: #f05f40; margin-top: 50px;">Work Experience</h3>
+      <div class="timeline">
+        <div class="timeline-item left">
+          <div class="timeline-content">
+            <img src="img/dpi.png" alt="Discovery Partner Institute" style="max-width: 300px; margin-bottom: 15px; border-radius: 8px;">
+            <h4>Data Analyst</h4>
+            <p>Discovery Partner Institute (January 2024 - May 2024)</p>
+            <p>At DPI, I developed an AI-driven tool to match researchers with grants, involving data gathering, cleaning, and structuring. I automated data extraction with Python and created a structured dataset to enhance semantic search, enabling more efficient researcher-grant matching.</p>
+          </div>
+        </div>
+        <div class="timeline-item right">
+          <div class="timeline-content">
+            <img src="img/guardian.png" alt="Guardian Life Insurance Company" style="max-width: 290px; margin-bottom: 15px; border-radius: 8px;">
+            <h4>Automation Developer/Analyst</h4>
+            <p>Guardian Life Insurance Company of America (June 2020 - August 2022)</p>
+            <p>Developed RPA bots using UiPath to streamline business processes related to insurance claim data, optimizing workflows and enhancing data accuracy. Utilized Excel for data processing and JIRA for project management and task tracking.</p>
+          </div>
+        </div>
+      </div>
+      
+      <h3 class="text-center" style="color: #f05f40; margin-top: 50px;">Certifications</h3>
+      <ul class="text-center text-faded" style="list-style: none; padding: 0; color: #f8f8f8; font-size: 18px;">
+        <li style="margin-bottom: 10px;">Microsoft Certified: Azure AI Fundamentals</li>
+        <li style="margin-bottom: 10px;">Google Data Analytics Specialization</li>
+        <li style="margin-bottom: 10px;">Google UX Design Certificate</li>
+        <li style="margin-bottom: 10px;">Excel Skills for Data Analytics and Visualization Specialization</li>
+        <li style="margin-bottom: 10px;">MTA: Introduction to Programming Using Python - Certified 2019</li>
+        <li style="margin-bottom: 10px;">Inferential and Predictive Statistics for Business</li>
+        <li style="margin-bottom: 10px;">Exploring and Producing Data for Business Decision Making</li>
+      </ul>
+
+      <h3 class="text-center" style="color: #f05f40; margin-top: 50px;">Portfolio Links</h3>
+      <div class="row">
+        <div class="col-lg-6 text-center">
+          <a href="https://public.tableau.com/app/profile/rijul.gupta7687/vizzes" class="btn btn-primary btn-xl page-scroll" target="_blank">View My Tableau Portfolio</a>
+        </div>
+        <div class="col-lg-6 text-center">
+          <a href="https://github.com/rijul1597/PortfolioProjects" class="btn btn-primary btn-xl page-scroll" target="_blank">View My GitHub Portfolio</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section and Footer -->
+<section id="contact" style="margin: 0; padding: 0;">
+  <footer style="background-color: #222; color: #fff; padding: 20px 0;">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-12">
+          <a href="https://github.com/rijul1597" target="_blank">
+            <img src="img/Github.png" alt="GitHub" style="width: 40px; height: 40px; margin: 0 15px;">
+          </a>
+          <a href="https://www.linkedin.com/in/rijul-gupta/" target="_blank">
+            <img src="img/linkedinicon.webp" alt="LinkedIn" style="width: 40px; height: 40px; margin: 0 15px;">
+          </a>
+          <a href="mailto:Rijulgupta1597@gmail.com" target="_blank">
+            <img src="img/gmail.png" alt="Gmail" style="width: 40px; height: 40px; margin: 0 15px;">
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <p style="margin-top: 10px; font-size: 14px; color: #888;">&copy; 2024 Rijul Gupta. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</section>
+
+  <!-- Scripts -->
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

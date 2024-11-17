@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Credit Default Risk - Rijul Gupta</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/creative.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand page-scroll" href="index.html">Home</a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a class="page-scroll" href="about.html">About</a></li>
+          <li><a class="page-scroll" href="index.html#projects">Projects</a></li>
+          <li><a class="page-scroll" href="Resume/Rijul Gupta_DA.pdf" target="_blank">Resume</a></li>
+          <li><a class="page-scroll" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Project Header Section -->
+  <section id="project-header" style="padding: 100px 0; color: #fff; background-color: #f05f40;">
+    <div class="container text-center">
+      <h1 class="section-heading">Home Credit Default Risk</h1>
+    </div>
+  </section>
+
+  <!-- Project Details Section -->
+  <section id="project-details" style="background-color: #333; color: #fff; padding: 50px 0;">
+    <div class="container">
+      <!-- Row with project description and images -->
+      <div class="row">
+        <!-- Left side: Text details -->
+        <div class="col-md-8">
+          <h2 style="color: #f05f40;">Project Overview</h2>
+          <p>The Home Credit Default Risk Project aims to predict loan default risk, helping lenders make informed decisions. This project leverages multiple datasets to uncover patterns in customer behavior and loan repayment, focusing on minimizing financial risks for lenders.</p>
+          <hr class="primary">
+
+          <h2 style="color: #f05f40;">Problem Statement</h2>
+          <p>The main challenge is predicting whether a loan applicant will default. This binary classification task faces an imbalance issue, with the majority of loans repaid and a smaller proportion defaulting. Accurate prediction is crucial for lending decisions to minimize losses.</p>
+          <hr class="primary">
+          
+
+          <h2 style="color: #f05f40;">Solution/Approach</h2>
+          <ul>
+          <li><strong> Data Cleaning:</strong> Handled missing values and dropped columns with high missingness (over 50%). Applied imputation techniques for moderate missing data.</li>
+          <li><strong> Feature Engineering:</strong> Created new features that add predictive value, including:
+            <ul>
+            <li>Debt-to-credit ratio from bureau.csv</li>
+            <li>Maximum utilization rate for credit cards from credit_card_balance.csv</li>
+            <li>Total number of active credits</li>
+            <li>Days since the last loan application</li>
+            </ul>
+          </li> 
+           <li><strong> Model Selection:</strong> Evaluated models like Logistic Regression, Random Forest, and Gradient Boosting (GBM), balancing interpretability, complexity, and predictive power.</li> 
+          </ul>  
+            
+          <hr class="primary">
+
+          <h2 style="color: #f05f40;">Key Steps and Tasks Performed</h2>
+          <ul>
+            <li><strong>Exploratory Data Analysis (EDA):</strong> Conducted target distribution analysis, correlation analysis, and examined class imbalance.</li>
+            <li><strong>Data Preprocessing:</strong> Managed missing values, applied transformations for skewed data, and reduced dimensionality using feature selection.</li>
+            <li><strong>Modeling and Evaluation:</strong> Trained various models, undersampled the majority class, and optimized hyperparameters for improved recall on default predictions.</li>
+          </ul>
+          <hr class="primary">
+
+          <h2 style="color: #f05f40;">Tools & Skills Utilized</h2>
+          <ul style="list-style: none; padding-left: 0;">
+            <li><strong>Programming Languages & Libraries: </strong>Python (Pandas, NumPy, Scikit-Learn, Matplotlib, Seaborn)</li>
+            <li><strong>Machine Learning Models: </strong> Logistic Regression, Random Forest, Gradient Boosting</li>
+            <li><strong>Data Processing: </strong> Feature engineering, handling imbalanced data, and outlier management</li>
+          </ul>
+          <hr class="primary">
+          <h2 style="color: #f05f40;">Key Learnings</h2>
+          <p>This project enhanced skills in handling imbalanced datasets, feature engineering across diverse data sources, and model tuning for classification accuracy. Gained experience with advanced data cleaning techniques and feature transformation to maximize model performance.</p>
+        </div>
+
+        <!-- Right side: Images with captions -->
+        <div class="col-md-4 text-center">
+          <!-- First Image with caption -->
+          <img src="img/Target.png" alt="Target Distribution" class="img-responsive" style="margin-bottom: 10px;">
+          <p class="text-muted" style="font-size: 14px;">Unbalanced Target variable distribution</p>
+
+          <!-- Second Image with caption -->
+          <img src="img/Correlation.png" alt="Correlation Heatmap" class="img-responsive" style="margin-top: 30px;">
+          <p class="text-muted" style="font-size: 14px;">Correlation heatmap for selected variables</p>
+           <!-- Second Image with caption -->
+           <img src="img/buildyears.png" alt="Correlation Heatmap" class="img-responsive" style="margin-top: 30px;">
+           <p class="text-muted" style="font-size: 14px;">Distribution of building ages with a peak in recent constructions</p>
+        </div>
+      </div>
+
+      <!-- Portfolio Links Section -->
+      <div class="row" style="margin-top: 40px;">
+        <div class="col-md-6 text-center">
+          <a href="https://github.com/rijul1597/PortfolioProjects/tree/276bd3debe749aead480edf6e12ca343744f0eba/Home%20Credit%20Default%20Prediction" class="btn btn-primary btn-xl page-scroll" target="_blank">View on GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section and Footer -->
+  <section id="contact" style="margin: 0; padding: 0;">
+    <footer style="background-color: #222; color: #fff; padding: 20px 0;">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-md-12">
+            <a href="https://github.com/rijul1597" target="_blank">
+              <img src="img/Github.png" alt="GitHub" style="width: 40px; height: 40px; margin: 0 15px;">
+            </a>
+            <a href="https://www.linkedin.com/in/rijul-gupta/" target="_blank">
+              <img src="img/linkedinicon.webp" alt="LinkedIn" style="width: 40px; height: 40px; margin: 0 15px;">
+            </a>
+            <a href="mailto:Rijulgupta1597@gmail.com" target="_blank">
+              <img src="img/gmail.png" alt="Gmail" style="width: 40px; height: 40px; margin: 0 15px;">
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <p style="margin-top: 10px; font-size: 14px; color: #888;">&copy; 2024 Rijul Gupta. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+
+  <!-- Scripts -->
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Predicting Stock Prices Using AWS Infrastructure</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/creative.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand page-scroll" href="index.html">Home</a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a class="page-scroll" href="about.html">About</a></li>
+          <li><a class="page-scroll" href="index.html#projects">Projects</a></li>
+          <li><a class="page-scroll" href="Resume/Rijul Gupta_DA.pdf" target="_blank">Resume</a></li>
+          <li><a class="page-scroll" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Project Header Section -->
+  <section id="project-header" style="padding: 100px 0; color: #fff; background-color: #f05f40;">
+    <div class="container text-center">
+      <h1 class="section-heading">Predicting Stock Prices Using Scalable AWS Infrastructure</h1>
+    </div>
+  </section>
+
+  <!-- Project Details Section -->
+  <section id="project-details" style="background-color: #333; color: #fff; padding: 50px 0;">
+    <div class="container">
+      <!-- Row with project description and images -->
+      <div class="row">
+        <!-- Left side: Text details -->
+        <div class="col-md-8">
+          <h2 style="color: #f05f40;">Project Overview</h2>
+          <p>This project leverages the AWS ecosystem to build a scalable infrastructure for predicting stock prices. Using Alpha Vantage for stock data, AWS Lambda, Glue, and S3 for data management, and SageMaker for model training, this setup provides real-time analytics to assist financial institutions in decision-making.</p>
+          <hr class="primary">
+
+          <h2 style="color: #f05f40;">Problem Statement</h2>
+          <p>Financial data processing and analysis can be challenging due to the high volume and real-time requirements. Traditional infrastructure often fails to meet these demands, resulting in delayed insights and missed opportunities. This project addresses these challenges by creating a scalable solution for real-time stock data analytics.</p>
+          <hr class="primary">
+          
+
+          <h2 style="color: #f05f40;">Solution/Approach</h2>
+          <ul>
+            <li><strong>Data Collection:</strong> Created Lambda function using AWS Lambda that fetches data from Alpha Vantage API, stores in S3, and is scheduled through EventBridge for daily updates.</li>
+            <li><strong>Data Cleaning:</strong> Utilised AWS Glue to create ETL jobs which cleans and transforms the data to create it in structured format for further processing</li>
+            <li><strong>Modeling:</strong> Used Amazon SageMaker Notebook instance for development and testing the code, further created training jobs to run the python scripts where I used Lasso Regression models on cleaned data to make stock prediction for Magnificent 7 stocks. The ouput is updated to S3.</li>
+            <li><strong>Monitoring and Logging:</strong> Used Cloudwatch to monitor the jobs and checking logs while development to test if the process is running as expected. </li>
+            <li><strong>Scheduling:</strong> Scheduled the entire pipeline to run daily after market close through Amazon EventBridge. </li>
+          </ul>  
+            
+          <hr class="primary">
+
+          <h2 style="color: #f05f40;">Key Steps and Tasks Performed</h2>
+          <ul>
+            <li><strong>Exploratory Data Analysis (EDA):</strong> Analyzed target distributions, correlations, and performed data balancing.</li>
+            <li><strong>Data Preprocessing:</strong> Managed missing values, applied transformations, and performed outlier analysis.</li>
+            <li><strong>Modeling and Evaluation:</strong> Trained models, optimized hyperparameters, and evaluated results.</li>
+          </ul>
+          <hr class="primary">
+
+          <h2 style="color: #f05f40;">Tools & Skills Utilized</h2>
+          <ul style="list-style: none; padding-left: 0;">
+            <li>Python (Pandas, NumPy, Scikit-Learn)</li>
+            <li>AWS Services: Lambda, S3, Glue, EventBridge, SageMaker</li>
+            <li>Machine Learning with Lasso Regression</li>
+          </ul>
+          <hr class="primary">
+          <h2 style="color: #f05f40;">Key Learnings</h2>
+          <p>Gained proficiency in using AWS services for scalable data processing and real-time analytics. Enhanced skills in machine learning applications for financial forecasting.</p>
+        </div>
+
+        <!-- Right side: Images with captions -->
+        <div class="col-md-4 text-center">
+          <!-- First Image with caption -->
+          <img src="img/Flowchart.png" alt="Data Flow Using AWS Services" class="img-responsive" style="margin-bottom: 10px;">
+          <p class="text-muted" style="font-size: 14px;">Data Flow Using AWS Services</p>
+        </div>
+      </div>
+
+      <!-- Portfolio Links Section -->
+      <div class="row" style="margin-top: 40px;">
+        <div class="col-md-6 text-center">
+          <a href="https://github.com/rijul1597/PortfolioProjects/tree/276bd3debe749aead480edf6e12ca343744f0eba/AWS%20_StockPrice_Prediction" class="btn btn-primary btn-xl page-scroll" target="_blank">View on GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section and Footer -->
+  <section id="contact" style="margin: 0; padding: 0;">
+    <footer style="background-color: #222; color: #fff; padding: 20px 0;">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-md-12">
+            <a href="https://github.com/rijul1597" target="_blank">
+              <img src="img/Github.png" alt="GitHub" style="width: 40px; height: 40px; margin: 0 15px;">
+            </a>
+            <a href="https://www.linkedin.com/in/rijul-gupta/" target="_blank">
+              <img src="img/linkedinicon.webp" alt="LinkedIn" style="width: 40px; height: 40px; margin: 0 15px;">
+            </a>
+            <a href="mailto:Rijulgupta1597@gmail.com" target="_blank">
+              <img src="img/gmail.png" alt="Gmail" style="width: 40px; height: 40px; margin: 0 15px;">
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <p style="margin-top: 10px; font-size: 14px; color: #888;">&copy; 2024 Rijul Gupta. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+
+  <!-- Scripts -->
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
