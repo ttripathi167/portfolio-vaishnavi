@@ -16,7 +16,6 @@
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-
     <style>
         /* Global Styles */
         body {
@@ -72,6 +71,22 @@
             padding: 60px 0;
         }
 
+        #interests {
+            background-color: #f8f9fa;
+            text-align: center;
+        }
+
+        #interests h2 {
+            margin-bottom: 30px;
+        }
+
+        .interest-card {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            background: white;
+        }
+
         #projects {
             background-color: #212529;
             color: white;
@@ -79,53 +94,32 @@
         }
 
         .project-card {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            height: 100%;
+            border: none;
             background: #2d3238;
             border-radius: 8px;
-            border: none;
+            color: white;
         }
 
         .project-card img {
             border-radius: 8px 8px 0 0;
-            max-height: 200px;
-            object-fit: cover;
-        }
-
-        .card-body {
-            padding: 20px;
         }
 
         /* Footer */
         footer {
             background: #000;
             color: white;
-            padding: 40px 0;
+            padding: 20px 0;
             text-align: center;
         }
 
-        .social-icons img {
+        footer img {
             height: 40px;
             margin: 0 10px;
             transition: transform 0.3s ease;
         }
 
-        .social-icons img:hover {
+        footer img:hover {
             transform: scale(1.1);
-        }
-
-        /* Flex Fixes */
-        .row.gy-4 {
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        .row.gy-4 > .col-md-4 {
-            display: flex;
-            flex-grow: 1;
-            align-items: stretch;
         }
     </style>
 </head>
@@ -155,6 +149,43 @@
         <p>Passionate about uncovering insights through data and creating impactful visualizations.</p>
         <a href="#about" class="btn btn-primary">Learn More</a>
     </header>
+
+    <!-- Interests Section -->
+    <section id="interests">
+        <div class="container">
+            <h2>My Interests</h2>
+            <div class="row gy-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="interest-card">
+                        <img src="img/data-analytics.jpeg" class="img-fluid" alt="Data Analytics">
+                        <h4>Data Analytics</h4>
+                        <p>Turning data into actionable business insights.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="interest-card">
+                        <img src="img/ML.jpeg" class="img-fluid" alt="Machine Learning">
+                        <h4>Machine Learning</h4>
+                        <p>Building predictive models to solve business problems.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="interest-card">
+                        <img src="img/DV.jpeg" class="img-fluid" alt="Data Visualization">
+                        <h4>Data Visualization</h4>
+                        <p>Crafting stories through visuals.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="interest-card">
+                        <img src="img/RPA.jpeg" class="img-fluid" alt="Intelligent Automation">
+                        <h4>Intelligent Automation</h4>
+                        <p>Streamlining workflows for better efficiency.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Projects Section -->
     <section id="projects">
@@ -208,3 +239,6 @@
 </body>
 
 </html>
+
+
+
