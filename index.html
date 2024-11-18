@@ -2,143 +2,175 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio of Vaishnavi Tripathi showcasing skills and projects">
-    <meta name="author" content="Vaishnavi Tripathi">
-    <title>Vaishnavi Tripathi | Portfolio</title>
-    <link rel="shortcut icon" href="img/r-icon.jpeg" type="image/jpeg">
-
-    <!-- External CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Vaishnavi Tripathi | Data Analyst Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         /* Global Styles */
         body {
-            font-family: 'Open Sans', sans-serif;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
+            scroll-behavior: smooth;
+            background-color: #f4f4f4;
         }
 
         nav {
-            background: #212529;
+            position: fixed;
+            width: 100%;
+            z-index: 10;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
         nav a {
-            color: white;
-            text-transform: uppercase;
-            font-size: 14px;
+            color: #333;
+            text-decoration: none;
+            margin: 0 15px;
         }
 
+        nav a:hover {
+            color: #007bff;
+        }
+
+        nav .navbar-brand {
+            font-weight: 700;
+            color: #007bff;
+        }
+
+        /* Header Section */
         header {
-            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url('img/hero-bg.jpeg') no-repeat center center/cover;
-            height: 100vh;
+            background: linear-gradient(to right, #007bff, #00bfff);
             color: white;
+            padding: 120px 20px 80px;
             text-align: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
         }
 
         header h1 {
-            font-size: 3.5rem;
+            font-size: 3rem;
             font-weight: 700;
         }
 
         header p {
-            font-size: 1.2rem;
-            max-width: 600px;
             margin: 20px auto;
+            max-width: 600px;
+            font-size: 1.2rem;
         }
 
-        header a {
+        header .btn-primary {
             margin-top: 20px;
-            padding: 10px 20px;
-            background: #007bff;
-            color: white;
-            border-radius: 5px;
-            text-decoration: none;
-            font-size: 16px;
+            font-weight: 600;
         }
 
-        /* Sections */
-        section {
-            padding: 60px 0;
-        }
-
-        #interests {
-            background-color: #f8f9fa;
+        /* About Section */
+        #about {
+            padding: 80px 20px;
             text-align: center;
+            background-color: #fff;
         }
 
-        #interests h2 {
-            margin-bottom: 30px;
+        #about img {
+            border-radius: 50%;
+            margin-bottom: 20px;
+            width: 150px;
         }
 
-        .interest-card {
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            border-radius: 10px;
-            background: white;
+        #about h2 {
+            font-weight: 700;
+            margin-bottom: 20px;
         }
 
+        #about p {
+            max-width: 700px;
+            margin: 0 auto 20px;
+        }
+
+        /* Projects Section */
         #projects {
-            background-color: #212529;
-            color: white;
+            padding: 80px 20px;
+            background-color: #f8f9fa;
+        }
+
+        #projects h2 {
             text-align: center;
+            font-weight: 700;
+            margin-bottom: 50px;
         }
 
         .project-card {
-            border: none;
-            background: #2d3238;
-            border-radius: 8px;
-            color: white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            background: #fff;
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
         }
 
         .project-card img {
-            border-radius: 8px 8px 0 0;
+            width: 100%;
+            height: auto;
+        }
+
+        .project-card h5 {
+            padding: 20px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        /* Contact Section */
+        #contact {
+            padding: 80px 20px;
+            text-align: center;
+            background-color: #fff;
+        }
+
+        #contact h2 {
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        #contact a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: 600;
         }
 
         /* Footer */
         footer {
-            background: #000;
+            background-color: #333;
             color: white;
-            padding: 20px 0;
             text-align: center;
+            padding: 20px;
         }
 
-        footer img {
-            height: 40px;
+        footer a {
+            color: #fff;
+            text-decoration: none;
             margin: 0 10px;
-            transition: transform 0.3s ease;
         }
 
-        footer img:hover {
-            transform: scale(1.1);
+        footer a:hover {
+            color: #007bff;
         }
     </style>
 </head>
 
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
         <div class="container">
             <a class="navbar-brand" href="#">Vaishnavi Tripathi</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="Resume/Vaishnavi_Tripathi_DA.pdf" target="_blank">Resume</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
+            <div class="ml-auto">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
             </div>
         </div>
     </nav>
@@ -146,96 +178,66 @@
     <!-- Header -->
     <header>
         <h1>Hi, I'm Vaishnavi</h1>
-        <p>Passionate about uncovering insights through data and creating impactful visualizations.</p>
-        <a href="#about" class="btn btn-primary">Learn More</a>
+        <p>Data Analyst with expertise in creating impactful solutions through advanced analytics and visualization.</p>
+        <a href="Resume/Vaishnavi_Tripathi.pdf" target="_blank" class="btn btn-primary btn-lg">Download Resume</a>
     </header>
 
-    <!-- Interests Section -->
-    <section id="interests">
+    <!-- About Section -->
+    <section id="about" data-aos="fade-up">
         <div class="container">
-            <h2>My Interests</h2>
-            <div class="row gy-4">
-                <div class="col-lg-3 col-md-6">
-                    <div class="interest-card">
-                        <img src="img/data-analytics.jpeg" class="img-fluid" alt="Data Analytics">
-                        <h4>Data Analytics</h4>
-                        <p>Turning data into actionable business insights.</p>
+            <img src="img/profile.jpg" alt="Profile Picture">
+            <h2>About Me</h2>
+            <p>I am passionate about uncovering actionable insights from data to drive better decision-making. Skilled in Python, SQL, Tableau, and machine learning, I have successfully worked on diverse projects involving customer churn prediction, stock price forecasting, and business intelligence dashboards.</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" data-aos="fade-right">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="project-card">
+                        <img src="img/Homecredit.jpeg" alt="Home Credit Default Risk">
+                        <h5>Home Credit Default Risk</h5>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="interest-card">
-                        <img src="img/ML.jpeg" class="img-fluid" alt="Machine Learning">
-                        <h4>Machine Learning</h4>
-                        <p>Building predictive models to solve business problems.</p>
+                <div class="col-md-4">
+                    <div class="project-card">
+                        <img src="img/stock.jpeg" alt="Stock Price Prediction">
+                        <h5>Stock Price Prediction</h5>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="interest-card">
-                        <img src="img/DV.jpeg" class="img-fluid" alt="Data Visualization">
-                        <h4>Data Visualization</h4>
-                        <p>Crafting stories through visuals.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="interest-card">
-                        <img src="img/RPA.jpeg" class="img-fluid" alt="Intelligent Automation">
-                        <h4>Intelligent Automation</h4>
-                        <p>Streamlining workflows for better efficiency.</p>
+                <div class="col-md-4">
+                    <div class="project-card">
+                        <img src="img/proj3.png" alt="Song Popularity Analysis">
+                        <h5>What Makes a Song Hit?</h5>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
+    <!-- Contact Section -->
+    <section id="contact" data-aos="fade-left">
         <div class="container">
-            <h2>Projects</h2>
-            <div class="row gy-4">
-                <div class="col-md-4">
-                    <div class="card project-card">
-                        <img src="img/Homecredit.jpeg" class="card-img-top" alt="Home Credit Default Risk">
-                        <div class="card-body">
-                            <h5 class="card-title">Home Credit Default Risk</h5>
-                            <p class="card-text">Predict loan default risks to improve financial decisions.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card project-card">
-                        <img src="img/stock.jpeg" class="card-img-top" alt="Stock Price Prediction">
-                        <div class="card-body">
-                            <h5 class="card-title">Stock Price Prediction</h5>
-                            <p class="card-text">Leveraging AWS for scalable prediction models.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card project-card">
-                        <img src="img/proj3.png" class="card-img-top" alt="What Makes a Song Hit?">
-                        <div class="card-body">
-                            <h5 class="card-title">What Makes a Song Hit?</h5>
-                            <p class="card-text">Analyzing audio features to predict song engagement.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:vaibhavikrishnakantt@gmail.com">vaibhavikrishnakantt@gmail.com</a></p>
+            <p>GitHub: <a href="https://github.com/ttripathi167" target="_blank">github.com/ttripathi167</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/vaishanvi-tripathi" target="_blank">linkedin.com/in/vaishanvi-tripathi</a></p>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <div class="container">
-            <div class="social-icons">
-                <a href="https://github.com/ttripathi167"><img src="img/Github.png" alt="GitHub"></a>
-                <a href="https://www.linkedin.com/in/vaishanvi-tripathi-a7785b325/"><img src="img/linkedinicon.webp" alt="LinkedIn"></a>
-            </div>
-            <p>&copy; 2024 Vaishnavi Tripathi. All Rights Reserved.</p>
-        </div>
+        <p>&copy; 2024 Vaishnavi Tripathi. All Rights Reserved.</p>
     </footer>
 
-    <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
