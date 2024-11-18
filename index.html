@@ -2,334 +2,146 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Vaishnavi Tripathi | Data Analyst Portfolio">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portfolio of Vaishnavi Tripathi showcasing skills and projects">
+    <meta name="author" content="Vaishnavi Tripathi">
     <title>Vaishnavi Tripathi | Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        /* Global Styles */
-        body {
-            font-family: 'Poppins', sans-serif;
-            scroll-behavior: smooth;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
-
-        nav {
-            position: fixed;
-            width: 100%;
-            z-index: 10;
-            background-color: #fff;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        nav .navbar-brand {
-            font-weight: 700;
-            color: #007bff;
-        }
-
-        nav a {
-            margin: 0 15px;
-            color: #333;
-            text-decoration: none;
-        }
-
-        nav a:hover {
-            color: #007bff;
-        }
-
-        /* Header Section */
-        header {
-            background: linear-gradient(to right, #007bff, #00bfff);
-            color: white;
-            text-align: center;
-            padding: 100px 20px;
-        }
-
-        header h1 {
-            font-size: 3rem;
-            font-weight: 700;
-        }
-
-        header p {
-            font-size: 1.2rem;
-            max-width: 700px;
-            margin: 20px auto;
-        }
-
-        header .btn-primary {
-            margin-top: 20px;
-            font-weight: 600;
-        }
-
-        /* About Section */
-        #about {
-            padding: 80px 20px;
-            text-align: center;
-            background-color: #fff;
-        }
-
-        #about img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            margin-bottom: 20px;
-        }
-
-        #about h2 {
-            font-weight: 700;
-        }
-
-        #about p {
-            max-width: 700px;
-            margin: 0 auto;
-        }
-
-        /* Skills Section */
-        #skills {
-            background-color: #f8f9fa;
-            padding: 80px 20px;
-        }
-
-        #skills h2 {
-            text-align: center;
-            margin-bottom: 50px;
-            font-weight: 700;
-        }
-
-        .skill-box {
-            text-align: center;
-            padding: 20px;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
-            background-color: #fff;
-        }
-
-        .skill-box i {
-            font-size: 3rem;
-            margin-bottom: 10px;
-            color: #007bff;
-        }
-
-        .skill-box h5 {
-            font-weight: 600;
-        }
-
-        /* Projects Section */
-        #projects {
-            padding: 80px 20px;
-            background-color: #fff;
-        }
-
-        #projects h2 {
-            text-align: center;
-            margin-bottom: 50px;
-            font-weight: 700;
-        }
-
-        .project-card {
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            background-color: #fff;
-            transition: transform 0.3s;
-        }
-
-        .project-card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-
-        .project-card:hover {
-            transform: translateY(-10px);
-        }
-
-        .project-card h5 {
-            padding: 20px;
-            font-weight: 600;
-            text-align: center;
-        }
-
-        /* Timeline Section */
-        #timeline {
-            padding: 80px 20px;
-            background-color: #f8f9fa;
-        }
-
-        #timeline h2 {
-            text-align: center;
-            margin-bottom: 50px;
-            font-weight: 700;
-        }
-
-        .timeline-item {
-            margin-bottom: 40px;
-        }
-
-        .timeline-item .content {
-            padding: 20px;
-            border-radius: 10px;
-            background-color: white;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        }
-
-        /* Contact Section */
-        #contact {
-            padding: 80px 20px;
-            text-align: center;
-            background-color: #fff;
-        }
-
-        #contact h2 {
-            margin-bottom: 20px;
-            font-weight: 700;
-        }
-
-        #contact a {
-            color: #007bff;
-            text-decoration: none;
-            font-weight: 600;
-        }
-
-        /* Footer */
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-
-        footer a {
-            color: #fff;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            color: #007bff;
-        }
-    </style>
+    <link rel="shortcut icon" href="img/r-icon.jpeg" type="image/jpeg">
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Merriweather:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/creative.css" type="text/css">
 </head>
 
-<body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg">
-        <div class="container">
-            <a class="navbar-brand" href="#">Vaishnavi Tripathi</a>
-            <div class="ml-auto">
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#timeline">Timeline</a>
-                <a href="#contact">Contact</a>
+<body id="page-top">
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Vaishnavi Tripathi</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a class="page-scroll" href="about.html">About</a></li>
+                    <li><a class="page-scroll" href="#projects">Projects</a></li>
+                    <li><a class="page-scroll" href="Resume/Vaishnavi_Tripathi_DA.pdf" target="_blank">Resume</a></li>
+                    <li><a class="page-scroll" href="#contact">Contact</a></li>
+                </ul>
             </div>
         </div>
     </nav>
 
     <!-- Header -->
     <header>
-        <h1>Hello, I'm Vaishnavi</h1>
-        <p>Data Analyst skilled in Python, SQL, Tableau, and Machine Learning with experience in impactful data-driven solutions.</p>
-        <a href="Resume/Vaishnavi_Tripathi.pdf" target="_blank" class="btn btn-primary btn-lg">Download Resume</a>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1>Hello! I'm Vaishnavi</h1>
+                <hr>
+                <p>Analyzing and visualizing data to make better and informed business decisions</p>
+                <a href="about.html" class="btn btn-primary btn-xl page-scroll">About Me</a>
+            </div>
+        </div>
     </header>
 
-    <!-- About Section -->
-    <section id="about">
+    <!-- Interests Section -->
+    <section id="interests" class="bg-primary text-white text-center">
         <div class="container">
-            <img src="img/profile.jpg" alt="Profile Picture">
-            <h2>About Me</h2>
-            <p>I am passionate about creating impactful solutions through data analysis. My expertise lies in Python, SQL, and visualization tools like Tableau. I thrive on uncovering actionable insights to drive decisions.</p>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills">
-        <div class="container">
-            <h2>Skills</h2>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="skill-box">
-                        <i class="fab fa-python"></i>
-                        <h5>Python</h5>
-                    </div>
+            <h2 class="text-uppercase">My Interests</h2>
+            <hr class="light">
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="img/data-analytics.jpeg" alt="Data Analytics" class="img-responsive center-block" style="height: 160px;">
+                    <h3>Data Analytics</h3>
+                    <p>Transforming data into actionable insights through analysis.</p>
                 </div>
-                <div class="col-md-4">
-                    <div class="skill-box">
-                        <i class="fas fa-database"></i>
-                        <h5>SQL</h5>
-                    </div>
+                <div class="col-md-3">
+                    <img src="img/ML.jpeg" alt="Machine Learning" class="img-responsive center-block" style="height: 160px;">
+                    <h3>Machine Learning</h3>
+                    <p>Building models that learn and make predictions from data.</p>
                 </div>
-                <div class="col-md-4">
-                    <div class="skill-box">
-                        <i class="fas fa-chart-pie"></i>
-                        <h5>Tableau</h5>
-                    </div>
+                <div class="col-md-3">
+                    <img src="img/DV.jpeg" alt="Data Visualization" class="img-responsive center-block" style="height: 160px;">
+                    <h3>Data Visualization</h3>
+                    <p>Creating visual representations to communicate data insights.</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="img/RPA.jpeg" alt="Intelligent Automation" class="img-responsive center-block" style="height: 160px;">
+                    <h3>Intelligent Automation</h3>
+                    <p>Automating repetitive tasks to improve efficiency and accuracy.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="project-card">
-                        <img src="img/project1.jpg" alt="Project 1">
-                        <h5>Customer Churn Prediction</h5>
+    <section id="projects" class="text-white" style="background-color: #000;">
+        <div class="container text-center">
+            <h2 class="section-heading">Projects</h2>
+            <hr>
+            <div class="row">
+                <!-- Project Cards -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card bg-dark">
+                        <img src="img/Homecredit.jpeg" class="card-img-top" alt="Home Credit Default Risk">
+                        <div class="card-body">
+                            <h4 class="card-title">Home Credit Default Risk</h4>
+                            <p class="card-text">Predict loan default risks and enable informed lending decisions.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="project-card">
-                        <img src="img/project2.jpg" alt="Project 2">
-                        <h5>Stock Price Prediction</h5>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card bg-dark">
+                        <img src="img/stock.jpeg" class="card-img-top" alt="Predicting Stock Prices">
+                        <div class="card-body">
+                            <h4 class="card-title">Stock Price Prediction</h4>
+                            <p class="card-text">Utilizing AWS for scalable stock price forecasting solutions.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="project-card">
-                        <img src="img/project3.jpg" alt="Project 3">
-                        <h5>Health Insurance Cross-Sell</h5>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card bg-dark">
+                        <img src="img/proj3.png" class="card-img-top" alt="What Makes a Song Hit?">
+                        <div class="card-body">
+                            <h4 class="card-title">What Makes a Song Hit?</h4>
+                            <p class="card-text">Predict engagement metrics based on musical features.</p>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Timeline Section -->
-    <section id="timeline">
-        <div class="container">
-            <h2>Timeline</h2>
-            <div class="timeline-item">
-                <div class="content">
-                    <h5>2023 - Graduated with a degree in Mechanical Engineering</h5>
-                    <p>Excelled in advanced data analytics and engineering concepts.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Feel free to reach out to discuss opportunities!</p>
-        <p>Email: <a href="mailto:vaibhavikrishnakantt@gmail.com">vaibhavikrishnakantt@gmail.com</a></p>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        &copy; 2024 Vaishnavi Tripathi. All Rights Reserved.
+    <footer id="contact" class="bg-dark text-white text-center">
+        <div class="container">
+            <div class="social-icons">
+                <a href="https://github.com/ttripathi167"><img src="img/Github.png" alt="GitHub"></a>
+                <a href="https://www.linkedin.com/in/vaishanvi-tripathi-a7785b325/"><img src="img/linkedinicon.webp" alt="LinkedIn"></a>
+                <a href="mailto:ttripathi167@gmail.com"><img src="img/gmail.png" alt="Gmail"></a>
+            </div>
+            <p>&copy; 2024 Vaishnavi Tripathi. All Rights Reserved.</p>
+        </div>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- Scripts -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/creative.js"></script>
 </body>
 
 </html>
+
